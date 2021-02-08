@@ -4,7 +4,7 @@
   "description": "Repair Design Project",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch sass/main.scss css/style.css --style=compressed",
+    "watch:sass": "sass --watch scss/main.scss css/style.css --style=compressed",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass"
   },

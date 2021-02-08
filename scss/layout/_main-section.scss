@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the main-section of the site/application.
+// -----------------------------------------------------------------------------
+
+.main-section {
+  background-image: url('../uploads/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  &-wrapper {
+    padding: 19.4rem 0 20.8rem 4rem;
+    max-width: 67.6rem;
+
+    &__title-span {
+      color: $brand-color;
+    }
+
+    &__text {
+      font-size: 157.14%;
+      line-height: 3.6rem;
+      margin: 2.5rem 0;
+    }
+  }
+}

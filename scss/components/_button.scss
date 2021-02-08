@@ -1,3 +1,49 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+// use in Header
+.header-wrapper__btn {
+  background-color: $brand-color;
+  border: 0.1rem solid $brand-color;
+  color: $text-color;
+  text-transform: uppercase;
+  padding: 1.2rem 3.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-style: italic;
+  @include on-event {
+    background-color: #131313;
+    color: $brand-color
+  }
+}
+
+// use in main-section
+.main-section-wrapper__btn {
+  text-transform: uppercase;
+  border: 1px solid $brand-color;
+  width: 20.7rem;
+  height: 5.1rem;
+  margin-right: 2rem;
+  color: $text-color;
+  font-size: 78.6%;
+  line-height: 1.5rem;
+  font-style: italic;
+  cursor: pointer;
+  &.primary{
+    background-color: $brand-color;
+    transition: all 0.2s;
+    @include on-event {
+      background-color: rgb(0, 0, 0, 0);
+    }
+  }
+  &.ghost {
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid $text-color;
+    transition: all 0.2s;
+    @include on-event {
+      background-color: $brand-color;
+      border: 1px solid $brand-color;
+    }
+  }
+}

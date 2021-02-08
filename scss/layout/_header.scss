@@ -1,3 +1,48 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.header{
+  background-color: #131313;
+  font-size: 78.5%;
+  line-height: 1.5rem;
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 83px;
+  }
+
+  &-nav__item {
+    text-transform: uppercase;
+    align-items: center;
+    transition: color 0.2s;
+    margin-right: 4.7rem;
+  }
+
+  &-nav__item:last-child {
+    margin-right: 0;
+  }
+
+  &-logo {
+    color: $brand-color;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    @include on-event {
+      transform: translateY(-0.2rem);
+    }
+  }
+
+  &-wrapper__item {
+    margin-right: 4.5rem;
+    transition: all 0.2s;
+    @include on-event {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+

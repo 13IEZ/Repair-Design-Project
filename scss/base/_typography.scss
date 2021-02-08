@@ -1,7 +1,14 @@
 /**
  * Basic typography style for copy text
  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font: normal 140% / 2.3 $text-font-stack;
+
+}
+
+h1 {
+  font: normal 285.7% / 5.3rem $title-font-stack;
+  text-transform: uppercase;
 }
