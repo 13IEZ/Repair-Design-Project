@@ -10,17 +10,22 @@
   @if $self {
     &,
     &:hover,
-    &:active,
-    &:focus {
+    &:active{
       @content;
     }
   } @else {
     &:hover,
-    &:active,
-    &:focus {
+    &:active{
       @content;
     }
   }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
 }
 
 /// Make a context based selector a little more friendly

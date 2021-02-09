@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the completed-project-section of the site/application.
+// -----------------------------------------------------------------------------
+
+.completed-project {
+  background-color: #131313;
+
+  &-wrapper {
+    display: flex;
+    padding: 10.7rem 0 0 4rem;
+
+    &_item {
+      width: 45%;
+      &__title {
+        margin-top: 9rem;
+      }
+
+      &__text {
+        line-height: 2.7rem;
+        margin: 3.4rem 0 4rem 0;
+      }
+
+      &-info {
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0 6rem 3.4rem 0;
+        width: 18rem;
+        &__text {
+          font-size: 92.9%;
+          line-height: 2.1rem;
+        }
+      }
+
+      &__img {
+        margin-top: 5.3rem;
+      }
+    }
+
+    &_item-nav {
+      display: flex;
+      align-items: center;
+      margin-top: 8rem;
+      padding-bottom: 6rem;
+      &__arrow {
+        margin-right: 2.95rem;
+        cursor: pointer;
+      }
+      &__arrow:last-child {
+        margin-left: 2.95rem;
+        cursor: pointer;
+      }
+      &__circle {
+        margin: 0 0.7rem;
+        cursor: pointer;
+      }
+    }
+
+    &_item:last-child {
+      width: 60%;
+    }
+  }
+}
+
+.active {
+  color: $brand-color;
+  border-bottom: 0.1rem solid $brand-color;
+  padding-bottom: 0.7rem;
+}
+

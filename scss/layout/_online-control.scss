@@ -1,0 +1,119 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the online-control-section of the site/application.
+// -----------------------------------------------------------------------------
+
+.online-control {
+  background: rgb(19, 19, 19);
+  background: linear-gradient(180deg, rgba(19, 19, 19, 1) 35%, rgba(255, 255, 255, 1) 35%);
+
+  &-wrapper {
+    &_item {
+      position: relative;
+
+      &__icon {
+        margin: 0 auto;
+        display: block;
+      }
+
+      &__video {
+        display: block;
+        width: 81.7rem;
+        height: 43.4rem;
+        background-image: url('../uploads/video-bg-pic.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin: 3rem auto;
+      }
+    }
+
+    &__text {
+      color: $dark-grey;
+      font-size: 128.6%;
+      line-height: 3.7rem;
+      text-align: center;
+      max-width: 64.5rem;
+      margin: 0 auto 9rem auto;
+
+      &::before {
+        content: ' ';
+        width: 5.5rem;
+        height: 0.15rem;
+        display: block;
+        background-color: $brand-color;
+        margin: 6rem auto 3.4rem auto;
+      }
+    }
+
+
+    &-form {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 20rem;
+      flex-wrap: wrap;
+
+      &_item {
+        display: flex;
+        flex-direction: column;
+
+        &__label {
+          color: $light-grey;
+          height: 2.8rem;
+        }
+
+        &__label:last-child {
+          color: $black;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 1.8rem;
+            height: 1.8rem;
+            background-image: url('../img/checkbox-off.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 0.8rem;
+          }
+        }
+
+        &__input {
+          color: $dark-grey;
+          border: none;
+          width: 23rem;
+          border-bottom: 0.1rem solid rgba(54, 54, 54, 0.3);
+
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+        }
+
+        &__input:focus {
+          border-bottom: 0.1rem solid $brand-color;
+        }
+
+        &__input-check {
+          display: none;
+
+          &:checked + .online-control-wrapper-form_item__label:last-child::before {
+            width: 1.8rem;
+            height: 1.8rem;
+            background-image: url('../img/checkbox-in.svg');
+          }
+        }
+      }
+
+      &_item:last-child {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0 0 0;
+      }
+    }
+  }
+}
+
+*:focus {
+  outline: none;
+}
