@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the gallery of the site/application.
+// -----------------------------------------------------------------------------
+
+.gallery {
+  background-image: url(../uploads/fantasies-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 24.2rem;
+
+  &-wrapper {
+    display: flex;
+
+    &-item {
+      width: 40%;
+      max-height: 86rem;
+
+      &__title {
+        margin: 11.7rem 0 3.7rem 0;
+      }
+
+      &__list {
+        list-style: none;
+
+        &-item {
+          font-size: 142.9%;
+          line-height: 3.8rem;
+          margin-bottom: 2.5rem;
+          cursor: pointer;
+          transition: all 0.2s;
+          @include on-event {
+            text-decoration: underline;
+            color: $brand-color
+          }
+        }
+      }
+
+      &__image-block-left {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: -4rem;
+
+        &__img {
+          margin-bottom: 4rem;
+        }
+      }
+
+      &__image-block-right {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: -3rem;
+        top: -11rem;
+
+        &__img {
+          margin-bottom: 4rem;
+        }
+      }
+
+    }
+
+    &-item:last-child {
+      width: 60%;
+      position: relative;
+    }
+  }
+}

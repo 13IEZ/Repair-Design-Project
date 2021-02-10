@@ -2,10 +2,6 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Nunito Sans', sans-serif !default;
@@ -13,9 +9,6 @@ $text-font-stack: 'Nunito Sans', sans-serif !default;
 /// Code (monospace) font family
 /// @type List
 $title-font-stack: 'Yeseva One', cursive !default;
-
-
-
 
 
 /// Copy text color
@@ -41,14 +34,9 @@ $dark-grey:#363636 !default;
 // Black color
 $black: #181818 !default;
 
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 125rem !default;
-
-
-
 
 
 /// Breakpoints map

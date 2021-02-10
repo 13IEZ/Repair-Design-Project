@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the promo of the site/application.
+// -----------------------------------------------------------------------------
+
+.promo {
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20rem;
+    &__text {
+      color: $brand-color;
+      font-size: 128.6%;
+      text-shadow: 0 0.3rem 1rem rgba(227, 184, 115, 0.15);
+      line-height: 2.6rem;
+    }
+  }
+}
