@@ -26,6 +26,7 @@
 		</div>
 	</div>
 </header>
+
 <main class="main">
 	<div class="container">
 		<div class="main-wrapper">
@@ -39,6 +40,7 @@
 
 	</div>
 </main>
+
 <section class="completed-project">
 	<div class="container">
 		<div class="completed-project-wrapper">
@@ -47,7 +49,6 @@
 				<p class="completed-project-wrapper_item__text">Only a small part of the work performed by our company
 					is presented<br> on the site. For 14 years on in the construction<br> market we have made happy more
 					than 1000 families</p>
-
 				<div class="completed-project-wrapper_item-info">
 					<h3 class="completed-project-wrapper_item-info__title">city:</h3>
 					<p class="completed-project-wrapper_item-info__text">Rostov-on-Don <br> LCD admiral</p>
@@ -86,6 +87,7 @@
 		</div>
 	</div>
 </section>
+
 <section class="online-control">
 	<div class="container">
 		<div class="online-control-wrapper">
@@ -100,7 +102,6 @@
 					below and you will receive a link to the broadcast.</p>
 			</div>
 		</div>
-
 		<div class="online-control-wrapper">
 			<form action="#" class="online-control-wrapper-form" method="post">
 				<div class="online-control-wrapper-form_item">
@@ -108,7 +109,6 @@
 					<input class="online-control-wrapper-form_item__input" id="name" placeholder="What is your name:"
 						   type="text">
 				</div>
-
 				<div class="online-control-wrapper-form_item">
 					<label class="online-control-wrapper-form_item__label" for="phone">Phone</label>
 					<input class="online-control-wrapper-form_item__input" id="phone" placeholder="Your phone number:"
@@ -131,7 +131,6 @@
 		<h5 class="types-of-repair__title">types of repair</h5>
 		<img alt="Camera icon" class="types-of-repair__icon" src="img/tools-ic.svg">
 		<div class="types-of-repair-wrapper">
-
 			<div class="types-of-repair-wrapper_item">
 				<div class="types-of-repair-wrapper_item_text-content">
 					<h6 class="types-of-repair-wrapper_item_text-content__title">Redecorating</h6>
@@ -151,7 +150,6 @@
 					<button class="types-of-repair-wrapper_item_text-content__btn">from 900 rub / m2</button>
 				</div>
 			</div>
-
 			<div class="types-of-repair-wrapper_item">
 				<div class="types-of-repair-wrapper_item_text-content">
 					<h6 class="types-of-repair-wrapper_item_text-content__title">Overhaul</h6>
@@ -171,7 +169,6 @@
 					<button class="types-of-repair-wrapper_item_text-content__btn">from 1800 rub / m2</button>
 				</div>
 			</div>
-
 			<div class="types-of-repair-wrapper_item">
 				<div class="types-of-repair-wrapper_item_text-content">
 					<h6 class="types-of-repair-wrapper_item_text-content__title">Designer Repair</h6>
@@ -282,7 +279,6 @@
 		<img alt="Our clients" class="our-clients__icon" src="img/clients-ic.svg">
 		<p class="our-clients__text">80% of our customers recommend us to their friends and family.</p>
 		<div class="our-clients-wrapper">
-
 			<div class="our-clients-wrapper_item">
 				<div class="our-clients-wrapper_item__title-block">
 					<img alt="Client" class="our-clients-wrapper_item__title-block__pic"
@@ -298,7 +294,6 @@
 						class="our-clients-wrapper_item__btn-left">40 м2</span> <span
 						class="our-clients-wrapper_item__btn-right">48 DAYS</span></button>
 			</div>
-
 			<div class="our-clients-wrapper_item">
 				<div class="our-clients-wrapper_item__title-block">
 					<img alt="Client" class="our-clients-wrapper_item__title-block__pic"
@@ -314,7 +309,6 @@
 						class="our-clients-wrapper_item__btn-left">90 м2</span> <span
 						class="our-clients-wrapper_item__btn-right">128 DAYS</span></button>
 			</div>
-
 			<div class="our-clients-wrapper_item">
 				<div class="our-clients-wrapper_item__title-block">
 					<img alt="Client" class="our-clients-wrapper_item__title-block__pic"
@@ -334,9 +328,49 @@
 	</div>
 </section>
 
-<script crossorigin="anonymous"
-		integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<section class="any-question">
+	<div class="container">
+		<form action="#" class="any-question-form" method="post">
+			<h5 class="any-question-form__title">have any questions?</h5>
+			<div class="any-question-form-wrapper">
+				<div class="any-question-form-wrapper_item">
+					<div class="any-question-form-wrapper_item-left">
+						<label class="any-question-form-wrapper__label" for="anyQName">Name</label>
+						<input class="any-question-form-wrapper__input" id="anyQName" placeholder="What is your name:"
+							   type="text">
+					</div>
+					<div class="any-question-form-wrapper_item-right">
+						<label class="any-question-form-wrapper__label" for="anyQPhone">Phone</label>
+						<input class="any-question-form-wrapper__input" id="anyQPhone" placeholder="Your phone number:"
+							   type="number">
+					</div>
+				</div>
+				<label class="any-question-form-wrapper__label" for="anyQText">Question</label>
+				<input class="any-question-form-wrapper__input" id="anyQText" placeholder="I want to know:" type="text">
+				<div class="any-question-form-wrapper__check">
+					<input checked class="any-question-form-wrapper__input-check" id="anyQCheck" type="checkbox">
+					<label class="any-question-form-wrapper__label-check" for="anyQCheck">I agree to the processing of
+						personal data</label>
+				</div>
+				<button class="any-question-form-wrapper__btn">submit</button>
+			</div>
+		</form>
+	</div>
+</section>
+
+<section class="our-contact">
+	<div class="container">
+		<div class="our-contact-wrapper">
+			<p class="our-contact-wrapper__address">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel <a class="our-contact-wrapper__tel-link"
+					href="tel:+79287683229">+7 (928) 768 32 29</a></p>
+			<div class="our-contact-wrapper-social-bar">
+				<div class="our-contact-wrapper-social-bar__item gmail"></div>
+				<div class="our-contact-wrapper-social-bar__item instagram"></div>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.553636602089!2d39.72239629333533!3d47.24487635468394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2skz!4v1613054864582!5m2!1sru!2skz" width="925" height="465" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</div>
+</section>
 <script src="js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the our-contact of the site/application.
+// -----------------------------------------------------------------------------
+.our-contact {
+  background-image: url('../uploads/our-contact-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &-wrapper {
+    padding: 20rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__address {
+      color: $brand-color;
+      font: normal 142.9% / 2.8rem $title-font-stack;
+      width: 45%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__tel-link {
+      color: $brand-color;
+      @include on-event {
+        text-decoration: underline;
+
+      }
+    }
+
+    &-social-bar {
+      display: flex;
+      margin: 2.6rem 0 4.5rem 0;
+      &__item{
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        background-color: $brand-color;
+        margin-right: 1.5rem;
+        cursor: pointer;
+        @include on-event {
+          background-color: #c99036;
+        }
+      }
+    }
+  }
+}
+
+.gmail {
+  background-image: url('../img/message-ic.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.instagram {
+  background-image: url('../img/social-ic.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
