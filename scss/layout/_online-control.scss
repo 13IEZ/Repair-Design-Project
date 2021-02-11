@@ -45,7 +45,6 @@
       }
     }
 
-
     &-form {
       display: flex;
       justify-content: space-around;
@@ -56,7 +55,9 @@
       &_item {
         display: flex;
         flex-direction: column;
-
+        @include respond(regular-desktop) {
+          margin-bottom: 3rem;
+        }
         &__label {
           color: $light-grey;
           height: 2.8rem;

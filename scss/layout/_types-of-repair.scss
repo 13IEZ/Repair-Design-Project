@@ -7,28 +7,32 @@
     color: $black;
     margin-top: 14.7rem;
   }
+
   &__icon {
     display: block;
     margin: 0 auto;
   }
 
-  &-wrapper{
+  &-wrapper {
     display: flex;
     justify-content: space-around;
     margin-top: 3.1rem;
-    &_item{
+
+    &_item {
       background-image: url('../uploads/repair-pic-1.jpg');
       background-repeat: no-repeat;
       background-size: 100% 75%;
       width: 100%;
       margin-right: 3rem;
-      &_text-content{
+
+      &_text-content {
         background-color: $text-color;
         width: 84%;
         margin: 35rem auto 0 auto;
         padding: 3rem 3rem 5.5rem 3rem;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         position: relative;
+
         &__list {
           color: $light-grey;
           margin-left: 1.5rem;
@@ -36,9 +40,11 @@
         }
       }
     }
+
     &_item:nth-child(2) {
       background-image: url('../uploads/repair-pic-2.jpg');
     }
+
     &_item:last-child {
       margin-right: 0;
       background-image: url('../uploads/repair-pic-3.jpg');

@@ -4,13 +4,16 @@
 
 .our-clients {
   margin-top: 14rem;
+
   &__title {
     color: $black;
   }
+
   &__icon {
     display: block;
     margin: 0 auto;
   }
+
   &__text {
     font-size: 128.6%;
     color: $dark-grey;
@@ -19,18 +22,22 @@
     margin: 2.3rem auto 3.9rem auto;
     line-height: 2.9rem;
   }
+
   &-wrapper {
     display: flex;
     justify-content: space-around;
+
     &_item {
       box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.04);
       padding: 2.6rem;
       width: 31%;
       position: relative;
+
       &__title-block {
         display: flex;
         align-items: center;
         margin-bottom: 1.5rem;
+
         &__pic {
           margin-right: 2rem;
         }

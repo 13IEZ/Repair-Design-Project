@@ -54,6 +54,9 @@
         flex-direction: column;
         right: -3rem;
         top: -11rem;
+        @include respond(regular-desktop) {
+          display: none;
+        }
 
         &__img {
           margin-bottom: 4rem;

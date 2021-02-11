@@ -6,11 +6,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   &-wrapper {
     padding: 20rem 0 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     &__address {
       color: $brand-color;
       font: normal 142.9% / 2.8rem $title-font-stack;
@@ -18,6 +20,7 @@
       text-align: center;
       text-transform: uppercase;
     }
+
     &__tel-link {
       color: $brand-color;
       @include on-event {
@@ -29,7 +32,8 @@
     &-social-bar {
       display: flex;
       margin: 2.6rem 0 4.5rem 0;
-      &__item{
+
+      &__item {
         width: 2.8rem;
         height: 2.8rem;
         border-radius: 50%;

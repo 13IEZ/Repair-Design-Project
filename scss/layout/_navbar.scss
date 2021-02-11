@@ -2,10 +2,17 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.header{
+.navbar {
   background-color: #131313;
   font-size: 78.5%;
   line-height: 1.5rem;
+
+&-wrapper {
+  @include respond(regular-desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
 
   & .container {
     display: flex;
@@ -14,14 +21,17 @@
     min-height: 8.3rem;
   }
 
-  &-nav__item {
+  &-nav-panel__item {
     text-transform: uppercase;
     align-items: center;
     transition: color 0.2s;
     margin-right: 4.7rem;
+    @include respond(regular-desktop) {
+      margin: 0 1rem;
+    }
   }
 
-  &-nav__item:last-child {
+  &-nav-panel__item:last-child {
     margin-right: 0;
   }
 
@@ -32,6 +42,9 @@
     @include on-event {
       transform: translateY(-0.2rem);
     }
+    @include respond(regular-desktop) {
+      margin: 0 0.5rem;
+    }
   }
 
   &-wrapper__item {
@@ -39,6 +52,9 @@
     transition: all 0.2s;
     @include on-event {
       text-decoration: underline;
+    }
+    @include respond(regular-desktop) {
+      margin: 0 0.5rem;
     }
   }
 }
