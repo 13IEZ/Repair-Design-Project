@@ -29,6 +29,9 @@
     @include respond(regular-desktop) {
       margin: 0 1rem;
     }
+    @include respond(big-tablets) {
+      font-size: 90%;
+    }
   }
 
   &-nav-panel__item:last-child {
@@ -55,6 +58,9 @@
     }
     @include respond(regular-desktop) {
       margin: 0 0.5rem;
+    }
+    @include respond(big-tablets) {
+      display: none;
     }
   }
 }

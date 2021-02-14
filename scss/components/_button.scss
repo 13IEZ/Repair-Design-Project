@@ -16,6 +16,10 @@
     background-color: #131313;
     color: $brand-color
   }
+  @include respond(big-tablets) {
+    padding: 1.2rem 2rem;
+    margin-left: 0.2rem;
+  }
 }
 
 // use in main-section

@@ -24,6 +24,9 @@
         background-position: center;
         background-size: contain;
         margin: 3rem auto;
+        @include respond(big-tablets) {
+          width: 60rem;
+        }
       }
     }
 

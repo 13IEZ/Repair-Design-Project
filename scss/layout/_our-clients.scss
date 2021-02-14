@@ -26,12 +26,19 @@
   &-wrapper {
     display: flex;
     justify-content: space-around;
+    @include respond(big-tablets) {
+      flex-wrap: wrap;
+    }
 
     &_item {
       box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.04);
       padding: 2.6rem;
       width: 31%;
       position: relative;
+      @include respond(big-tablets) {
+        width: 100%;
+        margin-bottom: 5rem;
+      }
 
       &__title-block {
         display: flex;

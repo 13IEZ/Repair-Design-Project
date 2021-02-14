@@ -17,6 +17,9 @@
     display: flex;
     justify-content: space-around;
     margin-top: 3.1rem;
+    @include respond(big-tablets) {
+      flex-wrap: wrap;
+    }
 
     &_item {
       background-image: url('../uploads/repair-pic-1.jpg');

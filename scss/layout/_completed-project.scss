@@ -35,6 +35,7 @@
         margin: 3.4rem 0 4rem 0;
         @include respond(regular-desktop) {
           text-align: center;
+
           br {
             display: none;
           }
@@ -59,7 +60,6 @@
           width: 50rem;
           display: block;
           margin: 2rem auto;
-
         }
       }
     }
