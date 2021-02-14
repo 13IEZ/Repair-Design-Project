@@ -12,6 +12,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include respond(small-tablets) {
+      padding: 35rem 3rem 2rem 3rem;
+    }
+    @include respond(small-phone) {
+      flex-direction: column-reverse;
+      padding: 35rem 0 2rem 0;
+    }
 
     &__address {
       color: $brand-color;
@@ -19,19 +26,28 @@
       width: 45%;
       text-align: center;
       text-transform: uppercase;
+      @include respond(small-tablets) {
+        width: 90%;
+      }
+      @include respond(small-phone) {
+        width: 100%;
+        font-size: 128.6%;
+      }
     }
 
     &__tel-link {
       color: $brand-color;
       @include on-event {
         text-decoration: underline;
-
       }
     }
 
     &-social-bar {
       display: flex;
       margin: 2.6rem 0 4.5rem 0;
+      @include respond(small-phone) {
+        order: -1;
+      }
 
       &__item {
         width: 2.8rem;
@@ -42,6 +58,10 @@
         cursor: pointer;
         @include on-event {
           background-color: #c99036;
+        }
+        @include respond(small-phone) {
+          width: 3.9rem;
+          height: 3.9rem;
         }
       }
     }
@@ -61,5 +81,10 @@
 }
 
 iframe {
-  width: 100%
+  width: 100%;
+  @include respond(small-phone) {
+    width: 34rem;
+    height: 25.6rem;
+    margin-bottom: 4rem;
+  }
 }

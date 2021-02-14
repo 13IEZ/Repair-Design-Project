@@ -5,6 +5,12 @@
 .online-control {
   background: rgb(19, 19, 19);
   background: linear-gradient(180deg, rgba(19, 19, 19, 1) 35%, rgba(255, 255, 255, 1) 35%);
+  @include respond(small-tablets) {
+    background: linear-gradient(180deg, rgba(19, 19, 19, 1) 20%, rgba(255, 255, 255, 1) 20%);
+  }
+  @include respond(small-phone) {
+    background: linear-gradient(180deg, rgba(19, 19, 19, 1) 97%, rgba(255, 255, 255, 1) 97%);
+  }
 
   &-wrapper {
     &_item {
@@ -27,6 +33,10 @@
         @include respond(big-tablets) {
           width: 60rem;
         }
+        @include respond(small-tablets) {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
 
@@ -37,6 +47,13 @@
       text-align: center;
       max-width: 64.5rem;
       margin: 0 auto 9rem auto;
+      @include respond(small-tablets) {
+        margin: 0 auto 2rem auto;
+      }
+      @include respond(small-phone) {
+        color: $text-color;
+        font-size: 78.6%;
+      }
 
       &::before {
         content: ' ';
@@ -54,6 +71,14 @@
       align-items: center;
       padding: 0 20rem;
       flex-wrap: wrap;
+      position: relative;
+      @include respond(small-tablets) {
+        padding: 0 2rem;
+      }
+      @include respond(small-phone) {
+        padding: 0;
+        margin-top: 5rem;
+      }
 
       &_item {
         display: flex;
@@ -61,13 +86,24 @@
         @include respond(regular-desktop) {
           margin-bottom: 3rem;
         }
+        @include respond(small-phone) {
+          margin-bottom: 1rem;
+        }
+
         &__label {
           color: $light-grey;
           height: 2.8rem;
+          @include respond(small-phone) {
+            color: rgba(255, 255, 255, 0.5);
+          }
         }
 
         &__label:last-child {
           color: $black;
+          @include respond(small-phone) {
+            color: $text-color;
+            margin-bottom: 8rem;
+          }
 
           &::before {
             content: '';
@@ -86,6 +122,14 @@
           border: none;
           width: 23rem;
           border-bottom: 0.1rem solid rgba(54, 54, 54, 0.3);
+          @include respond(small-phone) {
+            background-color: rgba(19, 19, 19, 1);
+            border-bottom: 0.1rem solid $text-color;
+            width: 34rem;
+            @include placeholder {
+              color: $text-color;
+            }
+          }
 
           &::-webkit-outer-spin-button,
           &::-webkit-inner-spin-button {

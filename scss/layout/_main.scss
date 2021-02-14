@@ -7,10 +7,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+  @include respond(small-tablets) {
+    background-size: cover;
+  }
 
   &-wrapper {
     padding: 19.4rem 0 20.8rem 4rem;
     max-width: 67.6rem;
+    @include respond(small-tablets) {
+      padding: 5rem 2rem;
+    }
+    @include respond(small-phone) {
+      padding: 8rem 0 0 0;
+    }
 
     &__title-span {
       color: $brand-color;
@@ -20,6 +29,16 @@
       font-size: 157.14%;
       line-height: 3.6rem;
       margin: 2.5rem 0;
+      @include respond(small-tablets) {
+        font-size: 130%;
+        br {
+          display: none;
+        }
+      }
+      @include respond(small-phone) {
+        font-size: 100%;
+        margin-bottom: 3rem;
+      }
     }
   }
 }

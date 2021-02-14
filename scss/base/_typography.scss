@@ -2,6 +2,7 @@
  * Basic typography style for copy text
  */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+
 body {
   color: $text-color;
   font: normal 140% / 2.3 $text-font-stack;
@@ -12,6 +13,12 @@ body {
 h1 {
   font: normal 285.7% / 5.3rem $title-font-stack;
   text-transform: uppercase;
+  @include respond(small-tablets) {
+    font-size: 180%;
+  }
+  @include respond(small-phone) {
+    font-size: 164.3%;
+  }
 }
 
 //use in completed-project section
@@ -19,12 +26,21 @@ h2 {
   font: normal 192.9% / 3.7rem $title-font-stack;
   color: $brand-color;
   text-transform: uppercase;
+  @include respond(small-phone) {
+    font-size: 157.14%;
+  }
 }
 
 h3 {
   font: normal 128.6% / 5.3rem $title-font-stack;
   color: $brand-color;
   text-transform: uppercase;
+  @include respond(small-tablets) {
+    line-height: 2.5rem;
+  }
+  @include respond(small-phone) {
+    font-size: 100%;
+  }
 }
 
 h4 {
@@ -34,7 +50,13 @@ h4 {
   margin-right: 5rem;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.3);
-
+  @include respond(small-tablets) {
+    margin-right: 1rem;
+    font-size: 80%;
+  }
+  @include respond(small-phone) {
+    display: none;
+  }
 }
 
 //use in Online Control, Types Of Repair
@@ -48,6 +70,6 @@ h5 {
 //use in types of repair content block
 h6 {
   font: normal 128.6% / 2.5rem $title-font-stack;
-  color:$dark-grey;
+  color: $dark-grey;
   margin-bottom: 1.3rem;
 }

@@ -6,6 +6,7 @@
   @include respond(big-tablets) {
     display: none;
   }
+
   &-wrapper {
     display: flex;
     align-items: center;

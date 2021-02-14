@@ -9,9 +9,24 @@
   background-size: 100%;
   padding-top: 40rem;
   position: relative;
+
+  .container {
+    @include respond(small-phone) {
+      padding: 0;
+    }
+  }
+
   @include respond(big-tablets) {
     margin-top: 5rem;
     background-size: 300%;
+  }
+  @include respond(small-tablets) {
+    padding-top: 20rem;
+    background-image: none;
+  }
+  @include respond(small-phone) {
+    background-color: $black;
+    margin: 0 auto;
   }
 
   &-form {
@@ -28,6 +43,18 @@
       width: 65rem;
       height: 50rem;
     }
+    @include respond(small-tablets) {
+      width: 90%;
+      padding: 2rem 2rem;
+      top: 5%;
+    }
+    @include respond(small-phone) {
+      width: 100%;
+      padding: 0;
+      right: 0;
+      top: 0;
+    }
+
 
     &-wrapper {
       display: flex;
@@ -36,6 +63,9 @@
       padding: 0 18rem;
       @include respond(big-tablets) {
         padding: 0 15rem;
+      }
+      @include respond(small-tablets) {
+        padding: 0 2rem;
       }
 
       &_item {
@@ -70,6 +100,9 @@
           display: block;
           width: 100%;
         }
+        @include respond(small-phone) {
+          margin-bottom: 3rem;
+        }
         @include placeholder {
           color: $text-color;
         }
@@ -94,6 +127,10 @@
       &__check {
         margin: 4.8rem 0 3.4rem 0;
         text-align: center;
+        @include respond(small-phone) {
+          text-align: left;
+          margin: 0;
+        }
       }
 
       &__label-check {

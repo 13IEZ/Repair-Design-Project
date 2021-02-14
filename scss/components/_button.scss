@@ -34,6 +34,13 @@
   line-height: 1.5rem;
   font-style: italic;
   cursor: pointer;
+  @include respond(small-tablets) {
+    margin-top: 2rem;
+  }
+  @include respond(small-phone) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
   &.primary {
     background-color: $brand-color;
@@ -60,6 +67,16 @@
   top: 32%;
   left: 44%;
   cursor: pointer;
+  @include respond(small-tablets) {
+    top: 23%;
+    left: 34%;
+  }
+  @include respond(small-phone) {
+    width: 3.7rem;
+    height: 3.7rem;
+    top: 30%;
+    left: 45%;
+  }
 }
 
 //use in form online-control
@@ -77,6 +94,11 @@
   @include on-event {
     background-color: $text-color;
     color: $brand-color
+  }
+  @include respond(small-phone) {
+    position: absolute;
+    bottom: 0;
+    width: 34rem;
   }
 }
 

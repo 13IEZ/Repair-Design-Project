@@ -4,6 +4,9 @@
 
 .our-clients {
   margin-top: 14rem;
+  @include respond(small-phone) {
+    display: none;
+  }
 
   &__title {
     color: $black;
@@ -21,6 +24,9 @@
     width: 30%;
     margin: 2.3rem auto 3.9rem auto;
     line-height: 2.9rem;
+    @include respond(small-tablets) {
+      width: 100%;
+    }
   }
 
   &-wrapper {

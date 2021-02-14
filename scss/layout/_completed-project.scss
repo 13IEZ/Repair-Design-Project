@@ -8,6 +8,7 @@
   &-wrapper {
     display: flex;
     padding: 10.7rem 0 0 4rem;
+
     @include respond(regular-desktop) {
       flex-direction: column;
       padding: 2rem 0;
@@ -16,8 +17,29 @@
 
     &_item {
       width: 45%;
+      position: relative;
       @include respond(regular-desktop) {
         width: 100%;
+      }
+
+      &-mobile-left-arr {
+        display: none;
+        @include respond(small-phone) {
+          position: absolute;
+          display: block;
+          top: 45%;
+          left: 1%;
+        }
+      }
+
+      &-mobile-right-arr {
+        display: none;
+        @include respond(small-phone) {
+          position: absolute;
+          display: block;
+          top: 45%;
+          right: 1%;
+        }
       }
 
       &__title {
@@ -28,6 +50,9 @@
             display: none;
           }
         }
+        @include respond(small-phone) {
+          margin-top: 4rem;
+        }
       }
 
       &__text {
@@ -35,9 +60,19 @@
         margin: 3.4rem 0 4rem 0;
         @include respond(regular-desktop) {
           text-align: center;
-
           br {
             display: none;
+          }
+        }
+        @include respond(small-phone) {
+          font-size: 78.6%;
+          &::after {
+            margin-top: 2rem;
+            display: block;
+            content: "";
+            width: 34rem;
+            height: 24.15rem;
+            background-image: url('../uploads/small-project-carousel.jpg');
           }
         }
       }
@@ -47,6 +82,14 @@
         flex-direction: column;
         margin: 0 6rem 3.4rem 0;
         width: 18rem;
+        @include respond(small-tablets) {
+          width: 30%;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        @include respond(small-phone) {
+
+        }
 
         &__text {
           font-size: 92.9%;
@@ -61,6 +104,12 @@
           display: block;
           margin: 2rem auto;
         }
+        @include respond(small-tablets) {
+          width: 40rem;
+        }
+        @include respond(small-phone) {
+          display: none;
+        }
       }
     }
 
@@ -72,6 +121,9 @@
       @include respond(regular-desktop) {
         justify-content: center;
         margin-top: 1rem;
+      }
+      @include respond(small-phone) {
+        display: none;
       }
 
       &__arrow {
@@ -94,6 +146,9 @@
       width: 60%;
       @include respond(regular-desktop) {
         width: 70%;
+      }
+      @include respond(small-tablets) {
+        width: 100%;
       }
     }
   }

@@ -6,6 +6,9 @@
   &__title {
     color: $black;
     margin-top: 14.7rem;
+    @include respond(small-tablets) {
+      margin-top: 8rem;
+    }
   }
 
   &__icon {
@@ -27,6 +30,10 @@
       background-size: 100% 75%;
       width: 100%;
       margin-right: 3rem;
+      @include respond(small-phone) {
+        width: 34rem;
+        margin: 0;
+      }
 
       &_text-content {
         background-color: $text-color;
@@ -35,6 +42,9 @@
         padding: 3rem 3rem 5.5rem 3rem;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         position: relative;
+        @include respond(small-phone) {
+          margin: 35rem 0 7rem;
+        }
 
         &__list {
           color: $light-grey;
