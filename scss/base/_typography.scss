@@ -30,42 +30,14 @@ h2 {
     font-size: 157.14%;
   }
 }
-
-h3 {
-  font: normal 128.6% / 5.3rem $title-font-stack;
-  color: $brand-color;
-  text-transform: uppercase;
-  @include respond(small-tablets) {
-    line-height: 2.5rem;
-  }
-  @include respond(small-phone) {
-    font-size: 100%;
-  }
-}
-
-h4 {
-  display: inline;
-  text-transform: uppercase;
-  font: normal 100% / 1.9rem $title-font-stack;
-  margin-right: 5rem;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.3);
-  @include respond(small-tablets) {
-    margin-right: 1rem;
-    font-size: 80%;
-  }
-  @include respond(small-phone) {
-    display: none;
-  }
-}
-
 //use in Online Control, Types Of Repair
-h5 {
+h3 {
   font: normal 142.9% / 2.8rem $title-font-stack;
   margin-bottom: 1.2rem;
   text-transform: uppercase;
   text-align: center;
 }
+
 
 //use in types of repair content block
 h6 {

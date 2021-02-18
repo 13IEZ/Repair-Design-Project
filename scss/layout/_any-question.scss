@@ -34,19 +34,33 @@
     width: 88.3rem;
     height: 46.5rem;
     position: absolute;
-    right: 18%;
+    right: 27%;
     top: 20%;
+    @media only screen and (max-width: 110.9em) {
+      right: 25%;
+    };
+    @media only screen and (max-width: 98.4em) {
+      right: 23%;
+    };
+    @media only screen and (max-width: 89.4em) {
+      right: 20%;
+    };
+    @media only screen and (max-width: 81.25em) {
+      right: 18%;
+    };
     @include respond(regular-desktop) {
-      right: 5%;
+      right: 10%;
     }
     @include respond(big-tablets) {
       width: 65rem;
       height: 50rem;
+      right: 12%;
     }
     @include respond(small-tablets) {
       width: 90%;
       padding: 2rem 2rem;
       top: 5%;
+      right: 5%;
     }
     @include respond(small-phone) {
       width: 100%;
@@ -166,3 +180,4 @@
     }
   }
 }
+

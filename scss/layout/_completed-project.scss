@@ -20,6 +20,9 @@
       position: relative;
       @include respond(regular-desktop) {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
       &-mobile-left-arr {
@@ -42,7 +45,7 @@
         }
       }
 
-      &__title {
+      &__main-title {
         margin-top: 9rem;
         @include respond(regular-desktop) {
           text-align: center;
@@ -52,6 +55,22 @@
         }
         @include respond(small-phone) {
           margin-top: 4rem;
+        }
+      }
+
+      &__title {
+        display: inline;
+        text-transform: uppercase;
+        font: normal 100% / 1.9rem $title-font-stack;
+        margin-right: 5rem;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.3);
+        @include respond(small-tablets) {
+          margin-right: 1rem;
+          font-size: 80%;
+        }
+        @include respond(small-phone) {
+          display: none;
         }
       }
 
@@ -70,7 +89,7 @@
             margin-top: 2rem;
             display: block;
             content: "";
-            width: 34rem;
+            width: 100%;
             height: 24.15rem;
             background-image: url('../uploads/small-project-carousel.jpg');
           }
@@ -82,13 +101,27 @@
         flex-direction: column;
         margin: 0 6rem 3.4rem 0;
         width: 18rem;
+        @include respond(regular-desktop) {
+          width: 40%;
+          padding: 0 11rem;
+        }
         @include respond(small-tablets) {
           width: 30%;
           flex-direction: row;
           flex-wrap: wrap;
-        }
-        @include respond(small-phone) {
+          padding: 0 5rem;
 
+        }
+        &__title {
+            font: normal 128.6% / 5.3rem $title-font-stack;
+            color: $brand-color;
+            text-transform: uppercase;
+            @include respond(small-tablets) {
+              line-height: 2.5rem;
+            }
+            @include respond(small-phone) {
+              font-size: 100%;
+            }
         }
 
         &__text {
@@ -121,6 +154,7 @@
       @include respond(regular-desktop) {
         justify-content: center;
         margin-top: 1rem;
+        width: 100%;
       }
       @include respond(small-phone) {
         display: none;
@@ -145,7 +179,7 @@
     &_item:last-child {
       width: 60%;
       @include respond(regular-desktop) {
-        width: 70%;
+        width: 100%;
       }
       @include respond(small-tablets) {
         width: 100%;
